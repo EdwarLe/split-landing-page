@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Helvetica, sans-serif;
+    color: white;
 }
 
 .main__contain {
@@ -37,14 +39,11 @@
     left: 0;
     height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.img__left {
-    height: 100%;
-    position: absolute;
-    right: 0;
-    transform: scaleX(-1);
-}
 
 .main__contain__right {
     position: relative;
@@ -67,10 +66,68 @@
     right: 0;
     height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.img__right {
-    position: absolute;
-    height: 100%;
-    right: 0;
+.btn__txt__right {
+    width: 60%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3 {
+    font-size: 3em;
+    text-align: center;
+}
+
+.btn__right {
+    height: 5em;
+    width: 50%;
+    border: solid 3px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn__right:hover {
+    background-color: black;
+    border: solid black 3px;
+}
+
+p {
+    font-weight: 700;
+    text-align: center;
+    padding: 0.5em;
+    color: white;
+}
+
+.btn__txt__left {
+    width: 60%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transform: scaleX(-1);
+}
+
+.btn__left {
+    height: 5em;
+    width: 50%;
+    border: solid 3px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn__left:hover {
+    background-color: rgb(30, 255, 0);
+    border: solid rgb(30, 255, 0) 3px;
 }
