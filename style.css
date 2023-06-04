@@ -11,66 +11,66 @@
     height: 100vh;
     width: 100vw;
     position: relative;
-    background-color: red;
     box-sizing: border-box;
-    overflow: hidden;
-}
-
-.main__contain__rigth {
-    height: 100%;
-    width: 50%;
-    background-color: rgb(19, 216, 61);
-    transition: 1s;
-    box-sizing: border-box;
-}
-
-.main__contain__rigth:hover {
-    transform: scaleX(170%);
-}
-
-.rigth__contain {
-    background: url(assets/Harley.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
     overflow: hidden;
 }
 
 .main__contain__left {
-    height: 100%;
+    position: relative;
     width: 50%;
-    background-color: rebeccapurple;
+    height: 100vh;
+    overflow: hidden;
     transition: 1s;
 }
 
 .main__contain__left:hover {
-    transform: scaleX(170%);
+    width: 100%;
 }
 
 .left__contain {
-    background-image: url(assets/kawasaki.jpg);
+    background-image: linear-gradient(rgba(30, 255, 0, 0.2), rgba(30, 255, 0, 0.2)), url(assets/kawasaki.jpg);
     background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    transform: scaleX(-1);
+    left: 0;
     height: 100%;
     width: 100%;
-    overflow: hidden;
 }
 
-
-/* .prueba {
-    width: 100%;
-    height: 80%;
+.img__left {
+    height: 100%;
     position: absolute;
-    left: 50%;
-    background-color: green;
-    z-index: 1000;
-    transform: scaleX(100%);
-    transition: .4s;
+    right: 0;
+    transform: scaleX(-1);
 }
 
-.prueba:hover {
-    transform: scaleX(170%);
-} */
+.main__contain__right {
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.main__contain__right:hover {
+    width: 100%;
+}
+
+.right__contain {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/Harley.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.img__right {
+    position: absolute;
+    height: 100%;
+    right: 0;
+}
